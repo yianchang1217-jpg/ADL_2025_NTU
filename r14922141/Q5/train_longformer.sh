@@ -1,0 +1,14 @@
+python run_longformer_qa_allinone.py \
+  --base_dir ./data \
+  --train_json train.json \
+  --valid_json valid.json \
+  --context_json context.json \
+  --combine_mode big \
+  --output_dir longformer_qa_3070 \
+  --max_length 4096 \
+  --doc_stride 256 \
+  --per_device_train_batch_size 2 \
+  --gradient_accumulation_steps 1 \
+  --learning_rate 5e-5 \
+  --num_train_epochs 1 \
+  --warmup_ratio 0.1
